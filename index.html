@@ -1,77 +1,111 @@
-<html>
-<head>
-    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-    <meta name="HandheldFriendly" content="true">
-<style>
+ <!DOCTYPE html>
+ <html lang="en">
 
-html, body {
-  margin: 0;
-  padding: 0;
+ <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Responsive Made Easy</title>
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link
+     href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Roboto:wght@300;400&display=swap"
+     rel="stylesheet">
+    
+     <style>
+       html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
 }
 
-    /*Title Section */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+
+h2,
+h3,
+p {
+  margin-bottom: 1em;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+
+
+.container {
+
+  width: 95%;
+}
+
+
+.container--narrow {
+  max-width: 34rem;
+}
+
+/*Section*/
+.red-section {
+  background-color: #d72323;
+  padding: 2rem 0 0 0;
+  width: 100%;
+  height: 13rem;
+}
+
+.white-section {
+  background-color: #ffff;
+  padding: 2rem 0;
+}
+
+.light-section {
+  background-color: #eeeeee;
+  padding: 2rem 0;
+}
+
+.dark-section {
+  background-color: #3a4750;
+  padding: 2rem 0;
+}
+
+   /*Title Section */
     
-    .logo .img-fluid {
-        padding: 1.5% 7% 1%;
-        width:auto;
-        height: 30%;
+   .img-fluid {
+    padding: 0.015rem 10rem 0.01rem;
+    float: left;
     }
 
-    .contact-div {
-        position: relative;
-        left: 80%;
-        top: -100px
-    }
 
-    .contact-div h2 {
-        font-size: 130%;
-        color: white;
-    }
+  .contact-div h2 {
+      font-size: 1.2rem;
+      color: white;
+      padding-left: 96.875rem;
 
-    .contact-div p {
-        font-size: 80%;
-        color: white;
-    }
+  }
 
-    /*Navigation or Menu Section */
+  .contact-div p {
+      font-size: 0.8rem;
+      color: white;
+      padding-left: 96.875rem;
+  }
 
 
-    .home {
-        position: relative;
-        left: 100px;
-        top: -125px;
-    }
 
-    .dog {
-        position: relative;
-        left: 200px;
-        top: -125px;
-    }
-
-    .cat {
-        position: relative;
-        left: 300px;
-        top: -125px;
-    }
-
-    .location {
-        position: relative;
-        left: 400px;
-        top: -125px;
-    }
-
-    .choose {
-        position: relative;
-        left: 500px;
-        top: -125px;
-
-    }
-
-    .care {
-        position: relative;
-        left: 600px;
-        top: -125px;
-    }
 
       /* Wrapper */
       #hamNav {
@@ -100,21 +134,21 @@ html, body {
     }
 
     li {
-        float: left;
-   
+        display: inline-block;
+        padding: 0 4rem;
     }
 
     li a, .dropbtn {
         display: inline-block;
         color: white;
         text-align: center;
-        padding: 14px 16px;
+        padding: 0.975rem 1rem;
         text-decoration: none;
     }
 
     li a:hover, .dropdown:hover .dropbtn {
-        border-top: 4px solid #ffffff;
-        border-bottom: 4px solid #ffffff;
+        border-top: 0.25rem solid #ffffff;
+        border-bottom: 0.25rem solid #ffffff;
     }
 
     li.dropdown {
@@ -125,14 +159,14 @@ html, body {
         display: none;
         position: absolute;
         background-color: #f9f9f9;
-        min-width: 160px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        min-width: 10rem;
+        box-shadow: 0 0.5rem 1rem 0 rgba(0,0,0,0.2);
         z-index: 1;
     }
 
     .dropdown-content a {
         color: black;
-        padding: 15px 16px;
+        padding: 0.9375rem 1rem;
         text-decoration: none;
         display: block;
         text-align: left;
@@ -149,38 +183,32 @@ html, body {
         display: block;
     }
 
-    #title .outer-nav {
-        background-color: #d72323;
-        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-        transition: 0.3s;
-        float: left;
-    }
 
-    /*Feutures section */
-    #features .float-left {
-        padding: 2% 1.5% 2% 2%; /* padding: top rightleft bottom */
+       /*Feutures section */
+       #features .float-left {
+        padding: 0rem 3rem; /* padding: top rightleft bottom */
         width: auto;
-        height: 500px;
+        height: 31.25rem;
         float: left;
     }
 
     #features h2 {
-        font-size: 2vw;
+        font-size: 1.875rem;
         color: black;
-        padding: 11% 0% 1%;
+
       }
 
       #features p {
-        font-size:0.85vw;
+        font-size: 1.125rem;
         color: black;
-        padding: 0% 2% 0%;
+        padding: 0 0.02rem 0;
         text-align: justify;
       }
 
       #features h3 {
-        font-size:1vw;
+        font-size:1.3rem;
         color: black;
-        padding: 1% 2% 0%;
+        padding: 0.8rem 0.02rem 0;
         text-align: justify;
       }
 
@@ -194,258 +222,172 @@ html, body {
         color: #8c0000;
       }
 
+      /*Article Section */
 
-      /*articles section */
-
-     /* #articles .card {
-        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-        transition: 0.3s;
-        background-color: white;
-        padding: 50px 30px;
-        float: left;
-        height: 600px;
-        width: 20%;
-        margin: 0px 130px 0;
-    }
-
-    #articles .card1 {
-        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-        transition: 0.3s;
-     
-        padding: 50px 30px;
-        float: left;
-        height: 600px;
-        width: 20%;
-        margin: 0px 60px 0;
-    }
-    #articles .card2 {
-        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-        transition: 0.3s;
-        background-color: white;
-        padding: 50px 30px;
-        float: left;
-        height: 600px;
-        width: 20%;
-        margin: 0px 60px 0;
-    }
-
-    #articles .card-img {
-        height: auto;
-        width: 100%;
-
-    }*/
-
-    #articles .outer-card {
-        background-color: #eeeeee;
-        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-        transition: 0.3s;
-        float: left;
-    }
-
-    .h2-outerarticle {
+      .h2-outerarticle {
         font-family: 'Arial', sans-serif;
         font-weight: Bold;
-        font-size: 1.5vw;
-        padding: 1.5% 0% 0%;
+        font-size: 1.875rem;
+        padding: 0.015rem 0 0;
         text-align: center;
     }
 
     .p-outerarticle {
         font-family: 'Arial', sans-serif;
-        font-size: 1vw;
-        padding: 0% 0% 1%;
+        font-size: 1.125rem;
+        padding: 0 0 0.01rem;
         text-align: center;
     }
-
-    /*#articles h2, #articles p {
-        text-align: center;
-    }
-
-    #articles img {
-        width: 540px;
-        height: auto;
-    }
-
-    .card:hover {
-        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    }
-
-    .container {
-        padding: 2px 16px;
-    }*/
-
     .container-article{
-    width: 1000px;
-    position: relative;
-    display: flex;
-    justify-content: space-between;
+      width: 62.5rem;
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      padding: 3rem 25rem;
+  }
+  
+  .container-article .card-article{
+      position: relative;
+      cursor: pointer;
+      padding: 0rem 2rem;
+  }
+  
+  .container-article .card-article .face{
+      width: 18.75rem;
+      height: 12.5rem;
+      transition: 0.5s;
+  }
+  
+  .container-article .card-article .face.face1{
+      position: relative;
+      background: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1;
+      transform: translateY(100px);
+  }
+  
+  .container-article .card-article:hover .face.face1{
+      background:black;
+      transform: translateY(0);
+  }
+  
+  .container-article .card-article .face.face1 .content{
+      opacity: 0.7;
+      transition: 0.5s;
+  }
+  
+  .container-article .card-article:hover .face.face1 .content{
+      opacity: 1;
+  }
+  
+  .container-article .card-article .face.face1 .content img{
+      max-width: 18.75rem;
+      position: relative;
+      top: 30;
+  }
+  
+  .container-article .card-article .face.face1 .content h3{
+      margin: 10px0.625rem 0 0;
+      padding: 0;
+      color: #fff;
+      text-align: center;
+      font-size: 1.5em;
+      position: relative;
+      top: -30;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .container-article .card-article .face.face2{
+      position: relative;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1.25rem;
+      box-sizing: border-box;
+      box-shadow: 0 1.25rem 3.125rem rgba(0, 0, 0, 0.8);
+      transform: translateY(-100px);
+  }
+  
+  .container-article .card-article:hover .face.face2{
+      transform: translateY(0);
+  }
+  
+  .container-article .card-article .face.face2 .content p{
+      margin: 0;
+      padding: 0;
+  }
+  
+  .container-article .card-article .face.face2 .content a{
+      margin: 0.9375rem 0 0;
+      display:  inline-block;
+      text-decoration: none;
+      font-weight: 900;
+      color: #333;
+      padding: 0.3125rem;
+      border: 0.0625rem solid #333;
+  }
+  
+  .container-article .card-article .face.face2 .content a:hover{
+      background: #333;
+      color: #fff;
+  }
+
+   /*Social section */
+
+
+   .outer-social {
+    padding: 3rem 49rem;
 }
 
-.container-article .card-article{
-    position: relative;
-    cursor: pointer;
-    position: relative;
-    left: 450px;
+.fa-twitter:hover {
+    color: #00acee;
 }
 
-.container-article .card-article .face{
-    width: 300px;
-    height: 200px;
-    transition: 0.5s;
+.fa-facebook-f:hover {
+    color: #3b5998 ;
 }
 
-.container-article .card-article .face.face1{
-    position: relative;
-    background: #333;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
-    transform: translateY(100px);
+.fa-youtube:hover {
+    color: #FF0000;
 }
 
-.container-article .card-article:hover .face.face1{
-    background:black;
-    transform: translateY(0);
+
+
+.fa-instagram:hover {
+    color: #8a3ab9;
 }
 
-.container-article .card-article .face.face1 .content{
-    opacity: 0.7;
-    transition: 0.5s;
+.fa-envelope:hover {
+    color: #8e3450;
 }
 
-.container-article .card-article:hover .face.face1 .content{
-    opacity: 1;
-}
 
-.container-article .card-article .face.face1 .content img{
-    max-width: 300px;
-    position: relative;
-    top: 30;
-}
+/* Footer Section */
 
-.container-article .card-article .face.face1 .content h3{
-    margin: 10px 0 0;
-    padding: 0;
-    color: #fff;
+#footer {
     text-align: center;
-    font-size: 1.5em;
-    position: relative;
-    top: -30;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
-}
-
-.container-article .card-article .face.face2{
-    position: relative;
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    box-sizing: border-box;
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
-    transform: translateY(-100px);
-}
-
-.container-article .card-article:hover .face.face2{
-    transform: translateY(0);
-}
-
-.container-article .card-article .face.face2 .content p{
-    margin: 0;
-    padding: 0;
-}
-
-.container-article .card-article .face.face2 .content a{
-    margin: 15px 0 0;
-    display:  inline-block;
-    text-decoration: none;
-    font-weight: 900;
-    color: #333;
-    padding: 5px;
-    border: 1px solid #333;
-}
-
-.container-article .card-article .face.face2 .content a:hover{
-    background: #333;
-    color: #fff;
-}
-
-     /*Social section */
-     #social .outer-social {
-        background-color: #3a4750;
-        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-        transition: 0.3s;
-        padding: 50px 0px;
-        float: left;
-        text-align: center;
-     }
-
-    .icon-footer {
-        margin: 20px 20px;
-    }
-    .fa-twitter:hover {
-        color: #00acee;
-    }
-
-    .fa-facebook-f:hover {
-        color: #3b5998 ;
-    }
-
-    .fa-youtube:hover {
-        color: #FF0000;
-    }
-
     
-
-    .fa-instagram:hover {
-        color: #8a3ab9;
-    }
-
-    .fa-envelope:hover {
-        color: #8e3450;
-    }
-
-
-    /* Footer Section */
- 
-    #footer {
-        text-align: center;
-        
-    }
-
-   
-
-    .p-outerfooter {
-  width: 100%;
-  background-color: white;
-  color: black;
-  text-align: center;
-  margin: 20px 10px;
-  font-size: 18px;
-
 }
+     </style>
+		<!-- Font Awesome -->
+		<script src="https://kit.fontawesome.com/34c7347b0e.js" crossorigin="anonymous"></script>
+ </head>
 
-
-</style>
-    <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/34c7347b0e.js" crossorigin="anonymous"></script>
-</head>
-<body>
-    
-
-
-    <section class="red-section" id="title" >
+ <body>
+  <section class="red-section" id="title" >
 
     <!-- Contact details or enquiry Call to Action -->
- <div class="outer-nav" style="height:160px; width: 100%">
+ <div class="">
  
     <!-- Logo -->
     <div class="container-fluid logo">
-        <img src="https://www.purina.com/themes/custom/purinacom/compiled-assets/media/images/logo%402x.png" class="img-fluid" alt="Error Image">
+        <img class="img-fluid" src="https://www.purina.com/themes/custom/purinacom/compiled-assets/media/images/logo%402x.png"  alt="Error Image">
         <div class= "contact-div">
             <h2>Contact Us!</h2>
             <p>1.800.778.7462<br>OFFICE OF CONSUMER AFFAIRS
@@ -460,6 +402,8 @@ html, body {
 <nav id="hamNav">
     <label for="hamburgerMenu"><i class="fas fa-bars"></i></label>
     <input type="checkbox" id="hamburgerMenu"/>
+    <div class="navbar-wrapper">
+      <div class="left">
     <ul>
 
         <li><a href="#title" class = "dropbtn home">Home</a></li>
@@ -497,6 +441,8 @@ html, body {
             </li>
         </li>
     </ul>
+  </div>
+</div>
 </nav>
 </div>
     </section>
@@ -504,7 +450,8 @@ html, body {
     <section class="white-section" id="features">
 
         <!-- Features -->
-        <img src = "https://www.purina.com/sites/g/files/auxxlc196/files/styles/kraken_generic_max_width_600/public/purina-fancy-feast-cat-food-review-update.jpg?itok=hMRBA5eN" class="float-left img-fluid" alt="Los Angeles">
+        <div class = "container">
+        <img src = "https://www.purina.com/sites/g/files/auxxlc196/files/styles/kraken_generic_max_width_600/public/purina-fancy-feast-cat-food-review-update.jpg?itok=hMRBA5eN" class="float-left" alt="Los Angeles">
         <h2 class = "h2-feature">LOREM IPSUM DOLOR SIT AMET</h2>
         <p>Sed ultricies nulla vel ligula luctus condimentum. Sed vestibulum quam neque, eu aliquam ante efficitur ac. Nam mattis finibus lacus eu rhoncus. Nunc mattis vel odio et lacinia. Donec sed tellus et tortor elementum 
         varius ut quis velit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur facilisis nibh vitae tortor scelerisque molestie. Sed vitae libero volutpat, ultrices 
@@ -518,7 +465,7 @@ html, body {
         <a href="https://www.purina.com/articles/kitten/feeding/when-to-switch-from-kitten-to-cat-food">When to Switch From Kitten Food To Cat Food</a>
         <br>
         <a href="https://www.purina.com/articles/kitten/feeding/7-tips-on-feeding-a-kitten">7 Tips on Feeding A Kitten You Should Know</a>
-
+      </div>
 
         <!-- Exerpts or Call to actions from other pages to draw engagements-->
 <br style="clear:both" />
@@ -526,33 +473,8 @@ html, body {
 
     <!-- Featured pages or blog articles exerpts to increase user interest -->
 
-    <section class="grey-section" id="articles">
-       <!-- <div class="outer-card" style="height:1000px; width: 100%">
-            <h2>Better Together</h2>
-            <p>Whether you have a question or are searching for tips, we’re committed to providing the answers you need to continue living your best life together.</p>
-        <div class="card">
-        <img class = "card-img" src="https://www.purina.com/sites/g/files/auxxlc196/files/styles/kraken_generic_max_width_600/public/purina-how-to-keep-your-pet-healthy-and-happ-indoors-500x300.jpg?itok=H0TH3eSi" alt="Avatar">
-        <div class="container">
-            <h2><b>10 Tips to Keep Dogs & Cats Happy Indoors</b></h2> 
-            <p>When you’re stuck inside, having pets can make the time a lot more enjoyable—but can also present some challenges. Purina’s pet behaviorists share tips to keep you and your pet happy when you’re stuck inside.</p> 
-        </div>
-        </div>
-        <div class="card1">
-            <img class = "card-img" src="https://www.purina.com/sites/g/files/auxxlc196/files/styles/kraken_generic_max_width_600/public/purina-dog-and-cat-enrichment-ideas-500x300.jpg?itok=l1MxgPqs" alt="Avatar">
-            <div class="container">
-                <h2><b>10 Creative Cat & Dog Enrichment Ideas</b></h2> 
-                <p>Spending extended periods of time indoors can be tedious and overwhelming for everyone, including pets. Taking time to come up with some creative enrichment activities for dogs and cats can help keep things interesting.</p> 
-            </div>
-            </div>
-            <div class="card2">
-                <img class = "card-img" src="https://www.purina.com/sites/g/files/auxxlc196/files/styles/kraken_generic_max_width_600/public/purina-fancy-feast-cat-food-review-update.jpg?itok=hMRBA5eN" alt="Avatar">
-                <div class="container">
-                    <h2><b>Teaching Kids to Care for Dogs & Cats</b></h2> 
-                    <p>Caring for a family pet is a great way to develop responsibility in kids. There are many rewarding ways to engage kids in pet care, and now is a perfect time to guide them, with these tips from Purina pet behavior experts.</p> 
-                </div>
-                </div>
-            </div>-->
-            <div class="outer-card" style="height:700px; width: 100%">
+    <section class="light-section" id="articles">
+            <div class="outer-card">
                 <h2 class=h2-outerarticle>Better Together</h2>
                 <p class = "p-outerarticle">Whether you have a question or are searching for tips, we’re committed to providing the answers you need to continue living your best life together.</p>
                 <div class="container-article">
@@ -606,23 +528,23 @@ html, body {
 
     <!-- Social Media Feed Integration -->
 
-    <section class="colored-section" id="social">
-        <div class="outer-social" style="height:200px; width: 100%">
+    <section class="dark-section" id="social">
+        <div class="outer-social">
             <a href="https://twitter.com/purina" class="dropbtn" target="_blank"><i class="fab fa-twitter fa-2x icon-footer"></i></a>
             <a href="https://www.facebook.com/purina" class="dropbtn" target="_blank"><i class="fab fa-facebook-f fa-2x icon-footer"></i></a>
             <a href="https://www.youtube.com/user/ThePurinaNetwork" class="dropbtn" target="_blank"><i class="fab fa-youtube fa-2x icon-footer"></i></a>
             <a href="https://www.instagram.com/purina/" class="dropbtn" target="_blank"><i class="fab fa-instagram fa-2x icon-footer"></i></a>
             <a href="https://www.purina.com/contact-us" class="dropbtn" target="_blank"><i class="fas fa-envelope fa-2x icon-footer"></i></a>
-            
          </div>
     
     </section>
 
-    <section class="black-section" id="footer" >
+    <section class="white-section" id="footer" >
         <div class="outer-fluid">
           <p class = "p-outerfooter">The information provided in this website is for academic purposes only. All the information on the site is provided in good faith and was taken from Purina website (https://www.purina.com/)</p>
         </div>
     </section>
 
-</body>
-</html>
+ </body>
+
+ </html>
