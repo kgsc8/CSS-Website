@@ -1,0 +1,628 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="HandheldFriendly" content="true">
+<style>
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+    /*Title Section */
+    
+    .logo .img-fluid {
+        padding: 1.5% 7% 1%;
+        width:auto;
+        height: 30%;
+    }
+
+    .contact-div {
+        position: relative;
+        left: 80%;
+        top: -100px
+    }
+
+    .contact-div h2 {
+        font-size: 130%;
+        color: white;
+    }
+
+    .contact-div p {
+        font-size: 80%;
+        color: white;
+    }
+
+    /*Navigation or Menu Section */
+
+
+    .home {
+        position: relative;
+        left: 100px;
+        top: -125px;
+    }
+
+    .dog {
+        position: relative;
+        left: 200px;
+        top: -125px;
+    }
+
+    .cat {
+        position: relative;
+        left: 300px;
+        top: -125px;
+    }
+
+    .location {
+        position: relative;
+        left: 400px;
+        top: -125px;
+    }
+
+    .choose {
+        position: relative;
+        left: 500px;
+        top: -125px;
+
+    }
+
+    .care {
+        position: relative;
+        left: 600px;
+        top: -125px;
+    }
+
+      /* Wrapper */
+      #hamNav {
+        width: 100%;
+        background: #cd0a0a;
+      }
+
+      /* Hide Hamburger */
+      #hamNav label, #hamburgerMenu { 
+        display: none; /* The element is completely removed or will not show up */
+      } 
+
+      
+    .dropbtn, .dropdown-content {
+        color: white;
+        font-family: 'Arial', sans-serif;
+        font-weight: Bold;
+    }
+
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        background-color: #d72323;
+ 
+    }
+
+    li {
+        float: left;
+   
+    }
+
+    li a, .dropbtn {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover, .dropdown:hover .dropbtn {
+        border-top: 4px solid #ffffff;
+        border-bottom: 4px solid #ffffff;
+    }
+
+    li.dropdown {
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 15px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+
+    .dropdown-content a:hover {
+       
+       background-color: lightgrey;
+        
+        
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    #title .outer-nav {
+        background-color: #d72323;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        float: left;
+    }
+
+    /*Feutures section */
+    #features .float-left {
+        padding: 2% 1.5% 2% 2%; /* padding: top rightleft bottom */
+        width: auto;
+        height: 500px;
+        float: left;
+    }
+
+    #features h2 {
+        font-size: 2vw;
+        color: black;
+        padding: 11% 0% 1%;
+      }
+
+      #features p {
+        font-size:0.85vw;
+        color: black;
+        padding: 0% 2% 0%;
+        text-align: justify;
+      }
+
+      #features h3 {
+        font-size:1vw;
+        color: black;
+        padding: 1% 2% 0%;
+        text-align: justify;
+      }
+
+      #features a {
+        text-decoration: none;
+        color: black;
+      }
+
+      #features a:hover {
+        text-decoration: none;
+        color: #8c0000;
+      }
+
+
+      /*articles section */
+
+     /* #articles .card {
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        background-color: white;
+        padding: 50px 30px;
+        float: left;
+        height: 600px;
+        width: 20%;
+        margin: 0px 130px 0;
+    }
+
+    #articles .card1 {
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+     
+        padding: 50px 30px;
+        float: left;
+        height: 600px;
+        width: 20%;
+        margin: 0px 60px 0;
+    }
+    #articles .card2 {
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        background-color: white;
+        padding: 50px 30px;
+        float: left;
+        height: 600px;
+        width: 20%;
+        margin: 0px 60px 0;
+    }
+
+    #articles .card-img {
+        height: auto;
+        width: 100%;
+
+    }*/
+
+    #articles .outer-card {
+        background-color: #eeeeee;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        float: left;
+    }
+
+    .h2-outerarticle {
+        font-family: 'Arial', sans-serif;
+        font-weight: Bold;
+        font-size: 1.5vw;
+        padding: 1.5% 0% 0%;
+        text-align: center;
+    }
+
+    .p-outerarticle {
+        font-family: 'Arial', sans-serif;
+        font-size: 1vw;
+        padding: 0% 0% 1%;
+        text-align: center;
+    }
+
+    /*#articles h2, #articles p {
+        text-align: center;
+    }
+
+    #articles img {
+        width: 540px;
+        height: auto;
+    }
+
+    .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+
+    .container {
+        padding: 2px 16px;
+    }*/
+
+    .container-article{
+    width: 1000px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-article .card-article{
+    position: relative;
+    cursor: pointer;
+    position: relative;
+    left: 450px;
+}
+
+.container-article .card-article .face{
+    width: 300px;
+    height: 200px;
+    transition: 0.5s;
+}
+
+.container-article .card-article .face.face1{
+    position: relative;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+}
+
+.container-article .card-article:hover .face.face1{
+    background:black;
+    transform: translateY(0);
+}
+
+.container-article .card-article .face.face1 .content{
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.container-article .card-article:hover .face.face1 .content{
+    opacity: 1;
+}
+
+.container-article .card-article .face.face1 .content img{
+    max-width: 300px;
+    position: relative;
+    top: 30;
+}
+
+.container-article .card-article .face.face1 .content h3{
+    margin: 10px 0 0;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    font-size: 1.5em;
+    position: relative;
+    top: -30;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.container-article .card-article .face.face2{
+    position: relative;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+    transform: translateY(-100px);
+}
+
+.container-article .card-article:hover .face.face2{
+    transform: translateY(0);
+}
+
+.container-article .card-article .face.face2 .content p{
+    margin: 0;
+    padding: 0;
+}
+
+.container-article .card-article .face.face2 .content a{
+    margin: 15px 0 0;
+    display:  inline-block;
+    text-decoration: none;
+    font-weight: 900;
+    color: #333;
+    padding: 5px;
+    border: 1px solid #333;
+}
+
+.container-article .card-article .face.face2 .content a:hover{
+    background: #333;
+    color: #fff;
+}
+
+     /*Social section */
+     #social .outer-social {
+        background-color: #3a4750;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        padding: 50px 0px;
+        float: left;
+        text-align: center;
+     }
+
+    .icon-footer {
+        margin: 20px 20px;
+    }
+    .fa-twitter:hover {
+        color: #00acee;
+    }
+
+    .fa-facebook-f:hover {
+        color: #3b5998 ;
+    }
+
+    .fa-youtube:hover {
+        color: #FF0000;
+    }
+
+    
+
+    .fa-instagram:hover {
+        color: #8a3ab9;
+    }
+
+    .fa-envelope:hover {
+        color: #8e3450;
+    }
+
+
+    /* Footer Section */
+ 
+    #footer {
+        text-align: center;
+        
+    }
+
+   
+
+    .p-outerfooter {
+  width: 100%;
+  background-color: white;
+  color: black;
+  text-align: center;
+  margin: 20px 10px;
+  font-size: 18px;
+
+}
+
+
+</style>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/34c7347b0e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+
+
+    <section class="red-section" id="title" >
+
+    <!-- Contact details or enquiry Call to Action -->
+ <div class="outer-nav" style="height:160px; width: 100%">
+ 
+    <!-- Logo -->
+    <div class="container-fluid logo">
+        <img src="https://www.purina.com/themes/custom/purinacom/compiled-assets/media/images/logo%402x.png" class="img-fluid" alt="Error Image">
+        <div class= "contact-div">
+            <h2>Contact Us!</h2>
+            <p>1.800.778.7462<br>OFFICE OF CONSUMER AFFAIRS
+                <br>PO BOX 340
+                <br>NEENAH WI 54957</p>
+            
+        </div>
+    </div>
+
+
+<!-- nav bar -->
+<nav id="hamNav">
+    <label for="hamburgerMenu"><i class="fas fa-bars"></i></label>
+    <input type="checkbox" id="hamburgerMenu"/>
+    <ul>
+
+        <li><a href="#title" class = "dropbtn home">Home</a></li>
+        <li class="dropdown dog">
+            <a href="" class="dropbtn">Dog Products</a>
+            <div class="dropdown-content ">
+                <a href="https://www.purina.com/pet-food-finder">Dog Food Finder</a>
+                <a href="https://www.purina.com/dogs/dog-food/dry">Dry Dog Food</a>
+                <a href="https://www.purina.com/dogs/dog-food/wet">Wet Dog Food</a>
+                <a href="https://www.purina.com/dogs/dog-food/puppy-food">Puppy Food</a>
+            </div>
+        </li>
+        <li class="dropdown cat">
+            <a href="" class="dropbtn ">Cat Products</a>
+            <div class="dropdown-content ">
+                <a href="https://www.purina.com/pet-food-finder">Cat Food Finder</a>
+                <a href="https://www.purina.com/cats/cat-food/dry">Dry Cat Food</a>
+                <a href="https://www.purina.com/cats/cat-food/wet">Wet Cat Food</a>
+                <a href="https://www.purina.com/cats/cat-food/kitten-food">Kitten Food</a>
+            </div>
+        </li>
+        <li><a href="https://www.purina.com/where-to-buy" class="dropbtn location">Where to Buy</a></li>
+        <li class="dropdown choose">
+            <a href="" class="dropbtn ">Choosing a Pet</a>
+            <div class="dropdown-content ">
+                <a href="https://www.purina.com/dogs/dog-breed-selector">Dog Breed Selector</a>
+                <a href="https://www.purina.com/cat-breed-selector">Cat Breed Selector</a>
+            </div>
+            <li class="dropdown care">
+                <a href="" class="dropbtn">Pet Care</a>
+                <div class="dropdown-content">
+                    <a href="https://www.purina.com/articles/puppy">Puppy Articles</a>
+                    <a href="https://www.purina.com/articles/kitten">Kitten Articles</a>
+                </div>
+            </li>
+        </li>
+    </ul>
+</nav>
+</div>
+    </section>
+
+    <section class="white-section" id="features">
+
+        <!-- Features -->
+        <img src = "https://www.purina.com/sites/g/files/auxxlc196/files/styles/kraken_generic_max_width_600/public/purina-fancy-feast-cat-food-review-update.jpg?itok=hMRBA5eN" class="float-left img-fluid" alt="Los Angeles">
+        <h2 class = "h2-feature">LOREM IPSUM DOLOR SIT AMET</h2>
+        <p>Sed ultricies nulla vel ligula luctus condimentum. Sed vestibulum quam neque, eu aliquam ante efficitur ac. Nam mattis finibus lacus eu rhoncus. Nunc mattis vel odio et lacinia. Donec sed tellus et tortor elementum 
+        varius ut quis velit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur facilisis nibh vitae tortor scelerisque molestie. Sed vitae libero volutpat, ultrices 
+        justo in, molestie dolor. Nullam porta condimentum urna id ultrices. Aenean vestibulum quis erat ut scelerisque. Nullam ante nisl, ultrices fermentum faucibus sit amet, porttitor quis turpis. Phasellus lobortis
+        rhoncus urna, vel laoreet nunc convallis in. Phasellus finibus rhoncus lobortis. Etiam convallis massa eu blandit condimentum.</p>
+
+        <p>Quisque fermentum quis nisi vitae mollis. Nam malesuada mi quis diam aliquet cursus. Nulla finibus, magna nec egestas porttitor, nulla libero imperdiet augue, dictum congue nibh eros sit amet est. 
+        Nam quis est ligula. Vestibulum nulla odio, ullamcorper at purus a, blandit tincidunt enim. Interdum et malesuada fames ac ante ipsum primis in faucibus. In et ex ligula.</p>
+
+        <h3>Related Articles:</h3>
+        <a href="https://www.purina.com/articles/kitten/feeding/when-to-switch-from-kitten-to-cat-food">When to Switch From Kitten Food To Cat Food</a>
+        <br>
+        <a href="https://www.purina.com/articles/kitten/feeding/7-tips-on-feeding-a-kitten">7 Tips on Feeding A Kitten You Should Know</a>
+
+
+        <!-- Exerpts or Call to actions from other pages to draw engagements-->
+<br style="clear:both" />
+    </section>
+
+    <!-- Featured pages or blog articles exerpts to increase user interest -->
+
+    <section class="grey-section" id="articles">
+       <!-- <div class="outer-card" style="height:1000px; width: 100%">
+            <h2>Better Together</h2>
+            <p>Whether you have a question or are searching for tips, we’re committed to providing the answers you need to continue living your best life together.</p>
+        <div class="card">
+        <img class = "card-img" src="https://www.purina.com/sites/g/files/auxxlc196/files/styles/kraken_generic_max_width_600/public/purina-how-to-keep-your-pet-healthy-and-happ-indoors-500x300.jpg?itok=H0TH3eSi" alt="Avatar">
+        <div class="container">
+            <h2><b>10 Tips to Keep Dogs & Cats Happy Indoors</b></h2> 
+            <p>When you’re stuck inside, having pets can make the time a lot more enjoyable—but can also present some challenges. Purina’s pet behaviorists share tips to keep you and your pet happy when you’re stuck inside.</p> 
+        </div>
+        </div>
+        <div class="card1">
+            <img class = "card-img" src="https://www.purina.com/sites/g/files/auxxlc196/files/styles/kraken_generic_max_width_600/public/purina-dog-and-cat-enrichment-ideas-500x300.jpg?itok=l1MxgPqs" alt="Avatar">
+            <div class="container">
+                <h2><b>10 Creative Cat & Dog Enrichment Ideas</b></h2> 
+                <p>Spending extended periods of time indoors can be tedious and overwhelming for everyone, including pets. Taking time to come up with some creative enrichment activities for dogs and cats can help keep things interesting.</p> 
+            </div>
+            </div>
+            <div class="card2">
+                <img class = "card-img" src="https://www.purina.com/sites/g/files/auxxlc196/files/styles/kraken_generic_max_width_600/public/purina-fancy-feast-cat-food-review-update.jpg?itok=hMRBA5eN" alt="Avatar">
+                <div class="container">
+                    <h2><b>Teaching Kids to Care for Dogs & Cats</b></h2> 
+                    <p>Caring for a family pet is a great way to develop responsibility in kids. There are many rewarding ways to engage kids in pet care, and now is a perfect time to guide them, with these tips from Purina pet behavior experts.</p> 
+                </div>
+                </div>
+            </div>-->
+            <div class="outer-card" style="height:700px; width: 100%">
+                <h2 class=h2-outerarticle>Better Together</h2>
+                <p class = "p-outerarticle">Whether you have a question or are searching for tips, we’re committed to providing the answers you need to continue living your best life together.</p>
+                <div class="container-article">
+                    <div class="card-article">
+                        <div class="face face1">
+                            <div class="content">
+                                <img class = "image" src="https://www.purina.com/sites/g/files/auxxlc196/files/styles/kraken_generic_max_width_600/public/purina-how-to-keep-your-pet-healthy-and-happ-indoors-500x300.jpg?itok=H0TH3eSi">
+                                <h3>10 Tips to Keep Dogs & Cats Happy Indoors</h3>
+                            </div>
+                        </div>
+                        <div class="face face2">
+                            <div class="content">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>
+                                    <a href="https://www.purina.com/articles/dog/activities/10-tips-to-keep-dogs-and-cats-happy-indoors">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-article">
+                        <div class="face face1">
+                            <div class="content">
+                                <img src="https://www.purina.com/sites/g/files/auxxlc196/files/styles/kraken_generic_max_width_600/public/purina-dog-and-cat-enrichment-ideas-500x300.jpg?itok=l1MxgPqs">
+                                <h3>10 Creative Cat & Dog Enrichment Ideas</h3>
+                            </div>
+                        </div>
+                        <div class="face face2">
+                            <div class="content">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>
+                                    <a href="https://www.purina.com/articles/dog/activities/10-creative-cat-and-dog-enrichment-ideas">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-article">
+                        <div class="face face1">
+                            <div class="content">
+                                <img src="https://www.purina.com/sites/g/files/auxxlc196/files/styles/kraken_generic_max_width_600/public/purina-teaching-kids-to-care-for-dogs-and-cats-500x300.jpg?itok=_N7D7GTq">
+                                <h3>Teaching Kids to Care for Dogs & Cats</h3>
+                            </div>
+                        </div>
+                        <div class="face face2">
+                            <div class="content">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>
+                                    <a href="https://www.purina.com/articles/dog/care/teaching-kids-to-care-for-dogs-and-cats">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </section>
+
+
+    <!-- Social Media Feed Integration -->
+
+    <section class="colored-section" id="social">
+        <div class="outer-social" style="height:200px; width: 100%">
+            <a href="https://twitter.com/purina" class="dropbtn" target="_blank"><i class="fab fa-twitter fa-2x icon-footer"></i></a>
+            <a href="https://www.facebook.com/purina" class="dropbtn" target="_blank"><i class="fab fa-facebook-f fa-2x icon-footer"></i></a>
+            <a href="https://www.youtube.com/user/ThePurinaNetwork" class="dropbtn" target="_blank"><i class="fab fa-youtube fa-2x icon-footer"></i></a>
+            <a href="https://www.instagram.com/purina/" class="dropbtn" target="_blank"><i class="fab fa-instagram fa-2x icon-footer"></i></a>
+            <a href="https://www.purina.com/contact-us" class="dropbtn" target="_blank"><i class="fas fa-envelope fa-2x icon-footer"></i></a>
+            
+         </div>
+    
+    </section>
+
+    <section class="black-section" id="footer" >
+        <div class="outer-fluid">
+          <p class = "p-outerfooter">The information provided in this website is for academic purposes only. All the information on the site is provided in good faith and was taken from Purina website (https://www.purina.com/)</p>
+        </div>
+    </section>
+
+</body>
+</html>
